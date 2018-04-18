@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>填写岗位信息</title>
+    <link rel="shortcut icon" href="../img/100du.ico">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <style>
+        /*web background*/
+        .container{
+            display:table;
+            height:100%;
+        }
+
+        .row{
+            display: table-cell;
+            vertical-align: middle;
+        }
+        /* centered columns styles */
+        .row-centered {
+            text-align:center;
+        }
+        .col-centered {
+            display:inline-block;
+            float:none;
+            text-align:left;
+            margin-right:-4px;
+        }
+        @media (min-width: 768px)
+        {
+            .well{
+                height:600px;
+                width:350px;
+            }
+
+        }
+        h1{
+            margin-top: 0;
+            font-size: 60px;
+            color: #115599;
+            font-family:Old English Text MT;
+            font-weight: bolder;
+        }
+    </style>
+</head>
+
+<body>
+<div class="container">
+
+    <div class="row row-centered ">
+        <div class="well col-md-6 col-centered">
+            <h1>Workers</h1>
+            <h1>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Register</h1>
+            <form action="zhuce_save.php" method="post">
+                <div class="input-group input-group-md">
+                    <span class="input-group-addon"><i class="glyphicon glyphicon-user" aria-hidden="true"></i></span>
+                    <input type="text" class="form-control" name="sname" placeholder="用户名"/>
+                </div>
+                <div class="input-group input-group-md">
+                    <span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
+                    <input type="text" class="form-control" name="pwd" placeholder="密码"/>
+                </div>
+                <div class="input-group input-group-md">
+                    <span class="input-group-addon"><i class="glyphicon glyphicon-hand-right"></i></span>
+                    <input type="text" class="form-control" name="snum" placeholder="职工号"/>
+                </div>
+                <div class="input-group input-group-md">
+                    <span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
+                    <input type="text" class="form-control" name="gnum" placeholder="岗位编号"/>
+                </div>
+                <div class="input-group input-group-md">
+                    <span class="input-group-addon"><i class="glyphicon glyphicon-thumbs-up"></i></span>
+                    <input type="text" class="form-control" name="stime" placeholder="工作年限"/>
+                </div>
+                <div class="input-group input-group-md">
+                    <span class="input-group-addon"><i class="glyphicon glyphicon-thumbs-up"> 生&nbsp;日</i></span>
+                    <input type="date" class="form-control" name="sbir"/>
+                </div>
+                <div class="input-group input-group-md">
+                    性&nbsp;&nbsp;别: &nbsp;&nbsp;</label><input type="radio" name="sex" value="男" checked="true">男
+                    &nbsp;&nbsp;<input type="radio" name="sex" value="女">女
+                </div>
+                <br/>
+                <p style="float: right;">
+                    <button type="submit" class="btn btn-info">注&nbsp;&nbsp;册</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <button type="reset" class="btn btn-success">取&nbsp;&nbsp;消</button>
+                </p>
+            </form>
+        </div>
+    </div>
+
+</div>
+
+<script src="js/jquery.min.js"></script>
+
+<script src="js/bootstrap.min.js"></script>
+</body>
+</html>
